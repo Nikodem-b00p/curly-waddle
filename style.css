@@ -216,7 +216,17 @@ img {
 }
 .feature__icon {
   grid-row: 1 / 3;
-  width: 30px;
+  width: 48px; /* Zwiększamy rozmiar dla lepszej widoczności */
+  height: 48px;
+  color: var(--color-primary); /* Nadaje ikonom zielony kolor */
+  display: flex; /* Centrowanie ikony w kontenerze */
+  align-items: center;
+  justify-content: center;
+}
+
+.feature__icon svg {
+  width: 100%; /* Dopasowanie SVG do kontenera */
+  height: 100%;
 }
 .feature__title {
   margin-bottom: 0.25rem;
