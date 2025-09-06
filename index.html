@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ale Bosco - Restauracja & Winiarnia w Gruszczynie</title>
+    <meta name="description" content="Odkryj wyjątkowe smaki w restauracji Ale Bosco. Nowoczesna kuchnia, bogata karta win i niepowtarzalna atmosfera.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo-link">
+                <img src="images/PHOTO-2025-04-02-13-13-14.jpg" alt="Logo Ale Bosco" class="nav__logo-img">
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#o-nas" class="nav__link">O Nas</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+                    <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+                </ul>
+            </div>
+            <button class="nav__toggle" aria-label="otwórz menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__content container">
+                <h1 class="hero__title reveal-on-scroll">Smak inspirowany naturą</h1>
+                <div class="hero__separator reveal-on-scroll"></div>
+                <p class="hero__subtitle reveal-on-scroll">Odkryj wyjątkowe połączenia w sercu Gruszczyna</p>
+                <a href="#menu" class="button button--primary reveal-on-scroll">Zobacz Menu</a>
+            </div>
+        </section>
+
+        <section id="o-nas" class="about section">
+            <div class="about__container container reveal-on-scroll">
+                 <figure class="about__figure">
+                    <img src="images/PHOTO-2025-04-13-21-37-52 5.jpg" alt="Eleganckie wnętrze restauracji" class="about__img">
+                </figure>
+                <div class="about__content">
+                    <h2 class="section__title">Nasza historia</h2>
+                    <p class="section__text">Ale Bosco to miejsce zrodzone z pasji do autentycznej kuchni i doskonałego wina. Wierzymy, że najlepsze dania powstają z prostych, lokalnych składników, a każdy posiłek to okazja do celebracji. Nasze wnętrze, inspirowane naturą, tworzy atmosferę relaksu i spokoju, idealną na spotkania z bliskimi.</p>
+                    <a href="#kontakt" class="button button--primary">Zarezerwuj stolik</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu section">
+            <h2 class="section__title container reveal-on-scroll">Nasze Menu</h2>
+            <div class="menu__container container">
+                <div class="menu-card reveal-on-scroll">
+                    <h3 class="menu-card__header">Dania Ciepłe</h3>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Krem pomidorowy z mascarpone i pesto</p>
+                        <span class="menu-card__price">22 PLN</span>
+                    </div>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Spaghetti al ragu</p>
+                        <span class="menu-card__price">38 PLN</span>
+                    </div>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Pizza z grzybami leśnymi i truflą</p>
+                        <span class="menu-card__price">42 PLN</span>
+                    </div>
+                </div>
+                
+                <div class="menu-card reveal-on-scroll">
+                    <h3 class="menu-card__header">Wino & Koktajle</h3>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Ca dei Frati Lugana DOC</p>
+                        <span class="menu-card__price">89 PLN</span>
+                    </div>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Aperol Spritz</p>
+                        <span class="menu-card__price">28 PLN</span>
+                    </div>
+                    <div class="menu-card__item">
+                        <p class="menu-card__name">Wino bezalkoholowe Le Grotte</p>
+                        <span class="menu-card__price">89 PLN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery section">
+            <h2 class="section__title container reveal-on-scroll">Galeria</h2>
+            <div class="gallery__grid container">
+                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52.jpg" alt="Wnętrze restauracji Ale Bosco"></figure>
+                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 4.jpg" alt="Regał z winami w Ale Bosco"></figure>
+                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 5.jpg" alt="Wystrój restauracji Ale Bosco"></figure>
+                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 6.jpg" alt="Stół w restauracji"></figure>
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact section">
+            <h2 class="section__title container reveal-on-scroll">Kontakt</h2>
+            <div class="contact__container container">
+                <div class="contact__info reveal-on-scroll">
+                    <address class="contact__address">
+                        <h3>Adres</h3>
+                        <p>ul. Wieżowa 79, Gruszczyn</p>
+                    </address>
+                    <div class="contact__hours">
+                        <h3>Godziny otwarcia</h3>
+                        <p>Poniedziałek, Środa-Piątek: 17-22</p>
+                        <p>Sobota, Niedziela: 8-22</p>
+                        <p><strong>We wtorek odpoczywamy :)</strong></p>
+                    </div>
+                    <div class="contact__reservations">
+                        <h3>Rezerwacje</h3>
+                        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+                    </div>
+                </div>
+                <div class="contact__map-wrapper reveal-on-scroll">
+                    <iframe 
+                        src="http://googleusercontent.com/maps.google.com/2" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="contact__map-iframe">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2025 Ale Bosco. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
