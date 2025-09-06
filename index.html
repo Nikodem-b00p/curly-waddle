@@ -8,7 +8,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
     
@@ -18,17 +18,17 @@
 
     <header class="header">
         <nav class="nav container">
-            <a href="#hero" class="nav__logo-link">
-                <img src="images/PHOTO-2025-04-02-13-13-14.jpg" alt="Logo Ale Bosco" class="nav__logo-img">
+            <a href="#" class="nav__logo">
+                ALE BOSCO
             </a>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#o-nas" class="nav__link">O Nas</a></li>
+                    <li class="nav__item"><a href="#o-nas" class="nav__link">O nas</a></li>
                     <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
                     <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
                 </ul>
             </div>
+            <a href="#kontakt" class="button">Rezerwacja</a>
             <button class="nav__toggle" aria-label="otwórz menu">
                 <span class="nav__toggle-bar"></span>
                 <span class="nav__toggle-bar"></span>
@@ -38,102 +38,333 @@
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="hero__content container">
-                <h1 class="hero__title reveal-on-scroll">Smak inspirowany naturą</h1>
-                <div class="hero__separator reveal-on-scroll"></div>
-                <p class="hero__subtitle reveal-on-scroll">Odkryj wyjątkowe połączenia w sercu Gruszczyna</p>
-                <a href="#menu" class="button button--primary reveal-on-scroll">Zobacz Menu</a>
+        <section id="hero" class="hero section">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">ALE BOSCO</h1>
+                    <p class="hero__subtitle">Wyjątkowe wina w sercu Gruszczyna</p>
+                    <div class="hero__buttons">
+                        <a href="#kontakt" class="button">Zarezerwuj stolik</a>
+                        <a href="#menu" class="button button--secondary">Zobacz menu</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/PHOTO-2025-04-13-21-37-52%203.jpg" alt="Wnętrze restauracji Ale Bosco">
+                </div>
             </div>
         </section>
 
         <section id="o-nas" class="about section">
-            <div class="about__container container reveal-on-scroll">
-                 <figure class="about__figure">
-                    <img src="images/PHOTO-2025-04-13-21-37-52 5.jpg" alt="Eleganckie wnętrze restauracji" class="about__img">
-                </figure>
-                <div class="about__content">
-                    <h2 class="section__title">Nasza historia</h2>
-                    <p class="section__text">Ale Bosco to miejsce zrodzone z pasji do autentycznej kuchni i doskonałego wina. Wierzymy, że najlepsze dania powstają z prostych, lokalnych składników, a każdy posiłek to okazja do celebracji. Nasze wnętrze, inspirowane naturą, tworzy atmosferę relaksu i spokoju, idealną na spotkania z bliskimi.</p>
-                    <a href="#kontakt" class="button button--primary">Zarezerwuj stolik</a>
+             <h2 class="section__title container">O naszej restauracji</h2>
+            <div class="about__container container">
+                <div class="about__features">
+                    <div class="feature">
+                        <img src="images/icon-wine.svg" alt="Ikona wina" class="feature__icon">
+                        <h3 class="feature__title">Wyselekcjonowane wina</h3>
+                        <p>Starannie dobrana kolekcja win z najlepszych włoskich winnic.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/icon-glass.svg" alt="Ikona kieliszka" class="feature__icon">
+                        <h3 class="feature__title">Wyjątkowe doznania</h3>
+                        <p>Profesjonalne doradztwo i degustacje.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/icon-location.svg" alt="Ikona lokalizacji" class="feature__icon">
+                        <h3 class="feature__title">Lokalizacja</h3>
+                        <p>ul. Wieżowa 79, Gruszczyn</p>
+                    </div>
+                </div>
+                <div class="about__gallery">
+                    <img src="images/PHOTO-2025-04-13-21-37-52%206.jpg" alt="Recepcja w restauracji Ale Bosco">
+                    <img src="images/PHOTO-2025-04-13-21-37-52.jpg" alt="Stoliki w restauracji Ale Bosco">
                 </div>
             </div>
         </section>
 
         <section id="menu" class="menu section">
-            <h2 class="section__title container reveal-on-scroll">Nasze Menu</h2>
+            <h2 class="section__title container">Menu</h2>
             <div class="menu__container container">
-                <div class="menu-card reveal-on-scroll">
-                    <h3 class="menu-card__header">Dania Ciepłe</h3>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Krem pomidorowy z mascarpone i pesto</p>
-                        <span class="menu-card__price">22 PLN</span>
-                    </div>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Spaghetti al ragu</p>
-                        <span class="menu-card__price">38 PLN</span>
-                    </div>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Pizza z grzybami leśnymi i truflą</p>
-                        <span class="menu-card__price">42 PLN</span>
-                    </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Talerzyki</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Tatar wołowy</span>
+                            </div>
+                            <span class="menu__price">38 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Sery i wędliny polskie</span>
+                            </div>
+                            <span class="menu__price">45 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Sery i wędliny włoskie</span>
+                            </div>
+                            <span class="menu__price">49 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Oliwki</span>
+                            </div>
+                            <span class="menu__price">15 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Sałatka grecka</span>
+                            </div>
+                            <span class="menu__price">36 zł</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Dania Ciepłe</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Krem pomidorowy z mascarpone i pesto</span>
+                            </div>
+                            <span class="menu__price">22 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Spaghetti al ragu</span>
+                            </div>
+                            <span class="menu__price">38 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Frytki z sosem serowym</span>
+                            </div>
+                            <span class="menu__price">19 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Pizza z grzybami leśnymi</span>
+                            </div>
+                            <span class="menu__price">19 zł</span>
+                        </li>
+                         <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Pyra z gzikiem i ogórkiem kiszonym</span>
+                            </div>
+                            <span class="menu__price">19 zł</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Desery</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Sernik z polewą czekoladową</span>
+                            </div>
+                            <span class="menu__price">20 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Tiramisu</span>
+                            </div>
+                            <span class="menu__price">18 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Panna cotta z sosem truskawkowym</span>
+                            </div>
+                            <span class="menu__price">18 zł</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Oferty Specjalne</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Degustacja</span>
+                                <span class="menu__description">3 win, 3 serów oraz wędlin</span>
+                            </div>
+                            <span class="menu__price">79 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Śniadania w weekendy 8-12</span>
+                                <span class="menu__description">Jajecznica z 3 jaj (24 zł), Bajgiel z gorgonzolą (24 zł), Bajgiel z mozzarellą i pesto (24 zł), Cornetto (10 zł)</span>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Lunch w weekendy 12-16</span>
+                                <span class="menu__description">2 propozycje zup, 2 propozycje dań</span>
+                            </div>
+                            <span class="menu__price">39 zł</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Wino</h3>
+                    <ul class="menu__list">
+                         <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Wino domu (białe/czerwone)</span>
+                                <span class="menu__description">włoskie lub hiszpańskie</span>
+                            </div>
+                            <span class="menu__price">14 zł / 38 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Ca dei Frati Lugana DOC</span>
+                                <span class="menu__description">wino białe wytrawne</span>
+                            </div>
+                            <span class="menu__price">69 zł / 119 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Ca dei Frati Rosa dei Frati</span>
+                                <span class="menu__description">wino różowe wytrawne</span>
+                            </div>
+                            <span class="menu__price">119 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Zenato Valpolicella Superiore</span>
+                                <span class="menu__description">wino czerwone wytrawne</span>
+                            </div>
+                            <span class="menu__price">119 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Wino bezalkoholowe La Grotte</span>
+                                <span class="menu__description">musujące, 0%</span>
+                            </div>
+                            <span class="menu__price">89 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Mionetto Prosecco DOC Treviso Brut</span>
+                                <span class="menu__description">wino wytrawne musujące</span>
+                            </div>
+                            <span class="menu__price">89 zł</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Piwo i Koktajle</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Piwo pszeniczne Franziskaner</span>
+                            </div>
+                            <span class="menu__price">18 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Piwo jasne Birra Moretti</span>
+                            </div>
+                            <span class="menu__price">15 zł</span>
+                        </li>
+                         <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Piwo belgijskie Grimbergen</span>
+                            </div>
+                            <span class="menu__price">18 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Piwo bezalkoholowe (Peroni / Mango ALE)</span>
+                            </div>
+                            <span class="menu__price">15 zł</span>
+                        </li>
+                         <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Aperol Spritz (również 0%)</span>
+                            </div>
+                            <span class="menu__price">28 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Gin & Tonic (również 0%)</span>
+                            </div>
+                            <span class="menu__price">26 zł</span>
+                        </li>
+                    </ul>
                 </div>
                 
-                <div class="menu-card reveal-on-scroll">
-                    <h3 class="menu-card__header">Wino & Koktajle</h3>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Ca dei Frati Lugana DOC</p>
-                        <span class="menu-card__price">89 PLN</span>
-                    </div>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Aperol Spritz</p>
-                        <span class="menu-card__price">28 PLN</span>
-                    </div>
-                    <div class="menu-card__item">
-                        <p class="menu-card__name">Wino bezalkoholowe Le Grotte</p>
-                        <span class="menu-card__price">89 PLN</span>
-                    </div>
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Kawa, Herbata i Napoje</h3>
+                    <ul class="menu__list">
+                         <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Kawa</span>
+                                <span class="menu__description">Espresso, Americano, Cappuccino, Kawa mrożona</span>
+                            </div>
+                            <span class="menu__price">8-20 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Herbata</span>
+                                <span class="menu__description">Czarna, zielona, owocowa</span>
+                            </div>
+                            <span class="menu__price">12 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Lemoniada cytrynowa</span>
+                            </div>
+                            <span class="menu__price">14 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Coca-Cola (zero)</span>
+                            </div>
+                            <span class="menu__price">10 zł</span>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__details">
+                                <span class="menu__name">Woda San Pellegrino</span>
+                            </div>
+                            <span class="menu__price">15 zł</span>
+                        </li>
+                    </ul>
                 </div>
+        
             </div>
         </section>
 
         <section id="galeria" class="gallery section">
-            <h2 class="section__title container reveal-on-scroll">Galeria</h2>
-            <div class="gallery__grid container">
-                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52.jpg" alt="Wnętrze restauracji Ale Bosco"></figure>
-                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 4.jpg" alt="Regał z winami w Ale Bosco"></figure>
-                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 5.jpg" alt="Wystrój restauracji Ale Bosco"></figure>
-                <figure class="gallery__item reveal-on-scroll"><img src="images/PHOTO-2025-04-13-21-37-52 6.jpg" alt="Stół w restauracji"></figure>
-            </div>
+             <h2 class="section__title container">Galeria</h2>
+             <div class="gallery__container container">
+                <img src="images/PHOTO-2025-04-13-21-37-52%202.jpg" alt="Galeria zdjęcie 1">
+                <img src="images/PHOTO-2025-04-13-21-37-52%204%20copy.jpg" alt="Galeria zdjęcie 2">
+             </div>
         </section>
 
         <section id="kontakt" class="contact section">
-            <h2 class="section__title container reveal-on-scroll">Kontakt</h2>
             <div class="contact__container container">
-                <div class="contact__info reveal-on-scroll">
-                    <address class="contact__address">
-                        <h3>Adres</h3>
-                        <p>ul. Wieżowa 79, Gruszczyn</p>
+                <div class="contact__image">
+                    <img src="images/PHOTO-2025-04-13-21-37-52%205.jpg" alt="Wnętrze restauracji z widokiem na okna">
+                </div>
+                <div class="contact__info">
+                    <h2 class="contact__title">Kontakt</h2>
+                    <address>
+                        <p>ul. Wieżowa 79</p>
+                        <p>Gruszczyn</p>
+                        <p>Tel: <a href="tel:+48123456789">+48 123 456 789</a></p>
+                        <p>Email: <a href="mailto:kontakt@alebosco.pl">kontakt@alebosco.pl</a></p>
                     </address>
                     <div class="contact__hours">
                         <h3>Godziny otwarcia</h3>
-                        <p>Poniedziałek, Środa-Piątek: 17-22</p>
-                        <p>Sobota, Niedziela: 8-22</p>
-                        <p><strong>We wtorek odpoczywamy :)</strong></p>
+                        <p>Poniedziałek - Piątek: 16:00 - 23:00</p>
+                        <p>Sobota: 14:00 - 23:00</p>
+                        <p>Niedziela: 14:00 - 22:00</p>
                     </div>
-                    <div class="contact__reservations">
-                        <h3>Rezerwacje</h3>
-                        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
-                    </div>
-                </div>
-                <div class="contact__map-wrapper reveal-on-scroll">
-                    <iframe 
-                        src="http://googleusercontent.com/maps.google.com/2" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="contact__map-iframe">
-                    </iframe>
                 </div>
             </div>
         </section>
